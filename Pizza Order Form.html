@@ -1,5 +1,6 @@
+<index.html>
 <!DOCTYPE html>
-<html lang="en" style="background-color:Tomato;">
+<html lang="en" style="background-color:rgb(187, 52, 28);">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,117 @@
 </head>
 <body>
     <h1>Pizza Castle Online Ordering</h1>
-
 <form action="/action_page.php">
   <label for="fname">First Name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last Name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br>
   <label for="pnumber">Contact Number:</label><br>
-  <input type="text" id="lname" name="lname" value="(###)###_####"><br><br>
+  <input type="text" id="lname" name="lname" value="(###)###_####"><br>
+  <label for="Pickup or Delivery">Pickup or Delivery:</label><br>
+  <select id="language" size="2" > 
+    <option value="pickup">pickup</option> 
+    <option value="delivery">delivery</option>  
+</select>
+<input type="text" value="instructions if delivery"><br>
+</form>
+ 
+<h2>Menu Items</h2>
+  
+  <form action="/action_page.php">
+    <h2>Sides & Drinks</h2>
+    <input type="checkbox" id="side1" name="side1" value="Cheesy Bread">
+    <label for="side1"> Cheesy Bread</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <input type="checkbox" id="side2" name="side2" value="Lava Cakes">
+    <label for="side2">Lava Cakes</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <input type="checkbox" id="side3" name="side3" value="Garden Salad">
+    <label for="side3">Garden Salad</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <input type="checkbox" id="side4" name="side4" value="1 Liter Root Beer">
+    <label for="side4">1-Liter Root Beer</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <input type="checkbox" id="side5" name="side5" value="1 Liter Sprite">
+    <label for="side5">1-Liter Sprite</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <input type="checkbox" id="side6" name="side6" value="1 Liter Dr Pepper">
+    <label for="side6">1-Liter Dr Pepper</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    </form>
+   
 
+    <form action="/action_page.php">
+      <h2>Specialty Pizzas-all specialty pizzas are handtossed unless specified in special instructions</h2>
+      <input type="checkbox" id="pizza1" name="pizza1" value="Cheese Pizza">
+      <select id="language" size="1" > 
+        <option value="small">small</option> 
+        <option value="medium">medium</option> 
+        <option value="large">large</option> 
+    </select> 
+      <label for="pizza1"> Cheese Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      
+      <input type="checkbox" id="pizza2" name="pizza2" value="Supreme Pizza">
+      <select id="language" size="1" > 
+        <option value="small">small</option> 
+        <option value="medium">medium</option> 
+        <option value="large">large</option> 
+    </select> 
+      <label for="pizza2">Supreme Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      
+      <input type="checkbox" id="pizza3" name="pizza3" value="Meat Lovers">
+      <select id="language" size="1" > 
+        <option value="small">small</option> 
+        <option value="medium">medium</option> 
+        <option value="large">large</option> 
+    </select> 
+      <label for="pizza3">Meat Lovers</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      
+      <input type="checkbox" id="pizza4" name="pizza4" value="Hawaiian pizza">
+      <select id="language" size="1" > 
+        <option value="small">small</option> 
+        <option value="medium">medium</option> 
+        <option value="large">large</option> 
+    </select> 
+      <label for="pizza4">Hawaiian pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      
+      <input type="checkbox" id="pizza5" name="pizza5" value="Buffalo Chicken">
+      <select id="language" size="1" > 
+        <option value="small">small</option> 
+        <option value="medium">medium</option> 
+        <option value="large">large</option> 
+    </select> 
+      <label for="pizza5">Buffalo Chicken</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      
+      <input type="checkbox" id="pizza6" name="pizza6" value="Breakfast Pizza">
+      <select id="language" size="1" > 
+        <option value="small">small</option> 
+        <option value="medium">medium</option> 
+        <option value="large">large</option> 
+    </select> 
+      <label for="pizza6">Breakfast Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      </form>
+      </body>
 
-<body>COSTRUCTION ZONE HERE!!!
-    PLEASE EXCUSE OUR APPEARANCE :)
-</body>
+<form action="/action_page.php">
+  <h2>Custom Pizzas</h2>
+  <header>Select Toppings</header>
+<input type="checkbox" id="topping1" name="topping1" value="Pepperoni"><label for="topping1"> Pepperoni</label>
+<input type="checkbox" id="topping2" name="topping2" value="Canadian Bacon"><label for="topping1"> Canadian Bacon</label>
+<input type="checkbox" id="topping3" name="topping3" value="Sausage"><label for="topping1">Sausage</label>
+<input type="checkbox" id="topping4" name="topping4" value="Mushroom"><label for="topping1">Mushroom</label>
+<input type="checkbox" id="topping5" name="topping5" value="Olive"><label for="topping1">Olive</label>
+<input type="checkbox" id="topping6" name="topping6" value="Bell Pepper"><label for="topping1">Bell Pepper</label>
+<input type="checkbox" id="topping7" name="topping7" value="Pineapple"><label for="topping1">Pineapple</label>
 
+<header>Select Crust</header>
+<input type="checkbox" id="crust1" name="crust1" value="Hand Tossed"><label for="crust1">Hand Tossed</label>
+<input type="checkbox" id="crust2" name="crust2" value="Thin Crust"><label for="crust2">Thin Crust</label>
+<input type="checkbox" id="crust3" name="crust3" value="Stuffed Crust"><label for="crust2">Stuffed Crust</label>
 
+<header>Select Size</header>
+<input type="checkbox" id="size1" name="size1" value="Small"><label for="size1">Small</label>
+<input type="checkbox" id="size2" name="size2" value="Medium"><label for="size1">Medium</label>
+<input type="checkbox" id="size3" name="size3" value="Large"><label for="size1">Large</label>
+<button type="button" onclick="alert('Pizza Added To Order!')">Add To Order</button><br><br><br>
+</form>
+<input type="text" value="Request Special Instructions"><br><br>
+<button type="button" onclick="alert('Thanks For Your Order!')">Submit Order</button>
 
-
-  <input type="submit" value="Submit">
-</form> 
 
 <style>
     table {
@@ -41,7 +134,7 @@
     }
     
     tr:nth-child(even) {
-      background-color: #1933c4c4;
+      background-color: #2743e2fb;
     }
     </style>
     </head>
@@ -59,46 +152,56 @@
       <tr>
         <td>Ernest Breaux</td>
         <td>1 SM Cheese Pizza<br>
+          Custom Pizza #1<br>
+          Pepperoni<br>
+          Sp. Ins. extra Pepperoni<br>
             1-1 Liter Root Beer
         </td>
-        <td>(337)365-7865</td>
+        <td>(###)###-7865</td>
         <td>Ready</td>
       </tr>
       <tr>
         <td>Ruby Myers</td>
-        <td>LG Chicken Salad<br>
+        <td>Garden Salad<br>
             LG Supreme Pizza<br>
-            8 BBq Wings
         </td>
-        <td>(337)364-5218</td>
+        <td>(###)###-5218</td>
         <td>Ready</td>
       </tr>
       <tr>
         <td>Paul Livingston</td>
         <td>3 LG Meat Lovers Pizza<br>
-        3-1 Liter Dr Pepper </td>
-        <td>(207)654-8353</td>
+        3-1 Liter Dr Pepper<br>
+      2  Garden Salad </td>
+        <td>(###)###-8353</td>
         <td>In Oven</td>
       </tr>
       <tr>
         <td>Brad Thompson</td>
-        <td>2 LG Pepperoni Pizza</td>
-        <td>(918)256-0361</td>
+        <td>2 LG Pepperoni Pizza<br>
+        4 Lava Cakes</td>
+        <td>(###)###-0361</td>
         <td>In Oven</td>
       </tr>
       <tr>
         <td>April Thibodeaux</td>
-        <td>12 BBQ Wings<br>
+        <td>1 Supreme Pizza<br>
         2-1 Liter Sprite</td>
-        <td>(604)456-9267</td>
+        <td>(###)###-9267</td>
         <td>IN Oven</td>
       </tr>
       <tr>
         <td>Anthony Gibson</td>
-        <td>3 Cheesy Bread<br>
-        2 Lava Cakes<br>
+        <td>Custom Pizza #1<br>
+          Pepperoni, Mushroom<br>
+          Stuffed Crust<br>
+          Large<br>
+          Custom Pizza #2<br>
+          Canadian Bacon<br>
+          Pepperoni<br>
+          Sp. Ins... extra Canadian Bacon
     </td>
-        <td>(318)489-3572</td>
+        <td>(###)###-3572</td>
         <td>Not Started</td>
       </tr>
     </table>
@@ -107,3 +210,4 @@
 </body>
 
 </html>
+</index.html>
