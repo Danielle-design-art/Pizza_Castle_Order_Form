@@ -1,2 +1,2 @@
-console.log("Help Wanted :)")
+console.log("Help Wanted ;)")
 
