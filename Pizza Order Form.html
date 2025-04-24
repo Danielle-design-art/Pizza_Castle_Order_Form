@@ -9,19 +9,22 @@
 
 <body>
     <h1>Pizza Castle Online Ordering</h1>
-<form action="/action_page.php">
+<section>
+    <form action="/action_page.php">
   <label for="fname">First Name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input required= "true" type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last Name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <input required= "true" type="text" id="lname" name="lname" value="Doe"><br>
   <label for="pnumber">Contact Number:</label><br>
-  <input type="text" id="lname" name="lname" value="(###)###_####"><br>
+  <input required= "true" type="text" id="lname" name="lname" value="(###)###_####"><br>
   <label for="Pickup or Delivery">Pickup or Delivery:</label><br>
   <select id="language" size="2" > 
     <option value="pickup">pickup</option> 
     <option value="delivery">delivery</option>  
 </select>
 <input type="text" value="instructions if delivery"><br>
+
+
 </form>
 
 
@@ -30,6 +33,8 @@
 
 <h2>Menu Items</h2>
   
+
+<div class="sides">
   <form action="/action_page.php">
     <h2>Sides & Drinks</h2>
     <input type="checkbox" id="side1" name="side1" value="Cheesy Bread">
@@ -37,16 +42,20 @@
     <input type="checkbox" id="side2" name="side2" value="Lava Cakes">
     <label for="side2">Lava Cakes</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
     <input type="checkbox" id="side3" name="side3" value="Garden Salad">
-    <label for="side3">Garden Salad</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <label for="side3">Garden Salad</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
     <input type="checkbox" id="side4" name="side4" value="1 Liter Root Beer">
-    <label for="side4">1-Liter Root Beer</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <label for="side4">1-Liter Root Beer</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
     <input type="checkbox" id="side5" name="side5" value="1 Liter Sprite">
-    <label for="side5">1-Liter Sprite</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <label for="side5">1-Liter Sprite</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
     <input type="checkbox" id="side6" name="side6" value="1 Liter Dr Pepper">
-    <label for="side6">1-Liter Dr Pepper</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+    <label for="side6">1-Liter Dr Pepper</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
+    <button type="button" onclick="alert('Pizza Added To Order!')">Add To Order</button><br>
+    <input type="text" id="result" name="result">
     </form>
-   
+  </div>
 
+   
+<div class="specialty pizza">
     <form action="/action_page.php">
       <h2>Specialty Pizzas-all specialty pizzas are handtossed unless specified in special instructions</h2>
       <input type="checkbox" id="pizza1" name="pizza1" value="Cheese Pizza">
@@ -55,7 +64,7 @@
         <option value="medium">medium</option> 
         <option value="large">large</option> 
     </select> 
-      <label for="pizza1"> Cheese Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      <label for="pizza1"> Cheese Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
       
       <input type="checkbox" id="pizza2" name="pizza2" value="Supreme Pizza">
       <select id="language" size="1" > 
@@ -63,7 +72,7 @@
         <option value="medium">medium</option> 
         <option value="large">large</option> 
     </select> 
-      <label for="pizza2">Supreme Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      <label for="pizza2">Supreme Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
       
       <input type="checkbox" id="pizza3" name="pizza3" value="Meat Lovers">
       <select id="language" size="1" > 
@@ -71,7 +80,7 @@
         <option value="medium">medium</option> 
         <option value="large">large</option> 
     </select> 
-      <label for="pizza3">Meat Lovers</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      <label for="pizza3">Meat Lovers</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
       
       <input type="checkbox" id="pizza4" name="pizza4" value="Hawaiian pizza">
       <select id="language" size="1" > 
@@ -79,7 +88,7 @@
         <option value="medium">medium</option> 
         <option value="large">large</option> 
     </select> 
-      <label for="pizza4">Hawaiian pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      <label for="pizza4">Hawaiian pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
       
       <input type="checkbox" id="pizza5" name="pizza5" value="Buffalo Chicken">
       <select id="language" size="1" > 
@@ -87,7 +96,7 @@
         <option value="medium">medium</option> 
         <option value="large">large</option> 
     </select> 
-      <label for="pizza5">Buffalo Chicken</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      <label for="pizza5">Buffalo Chicken</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
       
       <input type="checkbox" id="pizza6" name="pizza6" value="Breakfast Pizza">
       <select id="language" size="1" > 
@@ -95,10 +104,16 @@
         <option value="medium">medium</option> 
         <option value="large">large</option> 
     </select> 
-      <label for="pizza6">Breakfast Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="100"><br>
+      <label for="pizza6">Breakfast Pizza</label> <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
+      <button type="button" onclick="alert('Pizza Added To Order!')">Add To Order</button><br>
+<input type="text" id="result" name="result">
       </form>
       </body>
+    </div>
 
+
+
+      <div class="cutom pizza">
 <form action="/action_page.php">
   <h2>Custom Pizzas</h2>
   <header>Select Toppings</header>
@@ -118,14 +133,25 @@
 <header>Select Size</header>
 <input type="checkbox" id="size1" name="size1" value="Small"><label for="size1">Small</label>
 <input type="checkbox" id="size2" name="size2" value="Medium"><label for="size1">Medium</label>
-<input type="checkbox" id="size3" name="size3" value="Large"><label for="size1">Large</label>
-<button type="button" onclick="alert('Pizza Added To Order!')">Add To Order</button><br><br><br>
+<input type="checkbox" id="size3" name="size3" value="Large"><label for="size1">Large</label><br>
+<button type="button" onclick="alert('Pizza Added To Order!')">Add To Order</button><br>
+<input type="text" id="result" name="result">
+<br><br>
 </form>
 <input type="text" value="Request Special Instructions"><br><br>
 <button type="button" onclick="alert('Thanks For Your Order!')">Submit Order</button>
 
-<style>
 
+
+
+</div>
+
+
+
+
+
+
+</section>
 
     </head>
     <body>
@@ -135,12 +161,15 @@
     <table>
       <tr>
         <th>Customer First Name and Last Name</th>
+        <th>Special Instructions (optional)</th>
         <th>Order</th>
         <th>Contact Number</th>
         <th>Status</th>
+        <th>Pickup|Delivery</th>
       </tr>
       <tr>
         <td>Ernest Breaux</td>
+        <td></td>
         <td>1 SM Cheese Pizza<br>
           Custom Pizza #1<br>
           Pepperoni<br>
@@ -149,39 +178,49 @@
         </td>
         <td>(###)###-7865</td>
         <td>Ready</td>
+        <td>Pickup</td>
       </tr>
       <tr>
         <td>Ruby Myers</td>
+        <td></td>
         <td>Garden Salad<br>
             LG Supreme Pizza<br>
         </td>
         <td>(###)###-5218</td>
         <td>Ready</td>
+        <td>Delivery</td>
       </tr>
       <tr>
         <td>Paul Livingston</td>
+        <td></td>
         <td>3 LG Meat Lovers Pizza<br>
         3-1 Liter Dr Pepper<br>
       2  Garden Salad </td>
         <td>(###)###-8353</td>
         <td>In Oven</td>
+        <td>Delivery</td>
       </tr>
       <tr>
         <td>Brad Thompson</td>
+        <td></td>
         <td>2 LG Pepperoni Pizza<br>
         4 Lava Cakes</td>
         <td>(###)###-0361</td>
         <td>In Oven</td>
+        <td>Pickup</td>
       </tr>
       <tr>
         <td>April Thibodeaux</td>
+        <td></td>
         <td>1 Supreme Pizza<br>
         2-1 Liter Sprite</td>
         <td>(###)###-9267</td>
         <td>IN Oven</td>
+        <td>Pickup</td>
       </tr>
       <tr>
         <td>Anthony Gibson</td>
+        <td></td>
         <td>Custom Pizza #1<br>
           Pepperoni, Mushroom<br>
           Stuffed Crust<br>
@@ -193,6 +232,7 @@
     </td>
         <td>(###)###-3572</td>
         <td>Not Started</td>
+        <td>Delivery</td>
       </tr>
     </table>
    
