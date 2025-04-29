@@ -15,16 +15,14 @@
     <form action="/action_page.php">
   
   <div class="customerInfo">
-  <label for="fname">First Name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last Name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <label for="fname">Full Name:</label><br>
+  <input type="text" id="fname" value=""><br>
   <label for="pnumber">Contact Number:</label><br>
-  <input type="text" id="lname" name="lname" value="(###)###_####"><br>
+  <input type="text" id="pnumber" value=""><br>
   
  
   <label for="Pickup or Delivery">Pickup or Delivery:</label><br>
-  <select id="language" size="1" style="height: 40px;"> 
+  <select id="language" size="1" style="height: 32px;"> 
     <option value="pickup">pickup</option> 
     <option value="delivery">delivery</option>
   </select>
@@ -37,44 +35,15 @@
 
 <img src="pizza-pizzza.png" alt="Royal Pizza Image"; width="400px"; style="position:absolute; top: 10px; right: 10px">
 
-
-<h2>Menu Items</h2>
   
-
-  <form action="/action_page.php">
-    
-    <h2>Sides & Drinks</h2>
-    
- <div class="checkbox">
-    <input type="checkbox" id="side1" value="Cheesy Bread">
-    <label for="side1"> Cheesy Bread</label><br>
-    
-    <input type="checkbox" id="side2" value="Lava Cakes">
-    <label for="side2">Lava Cakes</label><br>
-    
-    <input type="checkbox" id="side3" value="Garden Salad">
-    <label for="side3">Garden Salad</label><br>
-    
-    <input type="checkbox" id="side4" value="1 Liter Root Beer">
-    <label for="side4">1-Liter Root Beer</label><br>
-    
-    <input type="checkbox" id="side5" value="1 Liter Sprite">
-    <label for="side5">1-Liter Sprite</label> <br>
-    
-    <input type="checkbox" id="side6" value="1 Liter Dr Pepper">
-    <label for="side6">1-Liter Dr Pepper</label> 
- </div>
     
  
   </form>
  
 
-   
-
-
-  <div class="specialty pizza">
+   <div class="specialty pizza">
     <form action="/action_page.php">
-      <h2>Specialty Pizzas-all specialty pizzas are handtossed unless specified in special instructions</h2>
+      <h2>Specialty Pizzas</h2>
      
       <input type="checkbox" id="pizza1" value="Cheese Pizza">
       <label for="pizza1"> Cheese Pizza</label> <br>
@@ -95,7 +64,7 @@
       <label for="pizza6">Breakfast Pizza</label> <br>
      
       <textarea id="specialInstructionsText">"Request Special Instructions"</textarea><br><br>
-      <button id="submitOrder" type="button" onclick="alert('Thanks For Your Order!')">Submit Order</button>
+      <button id="submitOrder" type="button" onclick="">Submit Order</button>
    
       </form>
       
@@ -110,12 +79,11 @@
     <table id="orderTablet">
       
       <tr>
-        <th>Customer First Name and Last Name</th>
-        <th>Special Instructions (optional)</th>
-        <th>Order</th>
-        <th>Contact Number</th>
-        <th>Status</th>
-        <th>Pickup|Delivery</th>
+        <th id="custName">Customer First Name and Last Name</th>
+        <th id="specialInstructions">Special Instructions (optional)</th>
+        <th id="order">Order</th>
+        <th id="contactNumber">Contact Number</th>
+        <th id="orderPreferrence">Pickup|Delivery</th>
       </tr>
     
       <tr>
@@ -128,7 +96,6 @@
             1-1 Liter Root Beer
         </td>
         <td>(###)###-7865</td>
-        <td>Ready</td>
         <td>Pickup</td>
       </tr>
      
@@ -139,18 +106,6 @@
             LG Supreme Pizza<br>
         </td>
         <td>(###)###-5218</td>
-        <td>Ready</td>
-        <td>Delivery</td>
-      </tr>
-      
-      <tr>
-        <td>Paul Livingston</td>
-        <td>N/A</td>
-        <td>3 LG Meat Lovers Pizza<br>
-        3-1 Liter Dr Pepper<br>
-      2  Garden Salad </td>
-        <td>(###)###-8353</td>
-        <td>In Oven</td>
         <td>Delivery</td>
       </tr>
      
@@ -160,7 +115,6 @@
         <td>2 LG Pepperoni Pizza<br>
         4 Lava Cakes</td>
         <td>(###)###-0361</td>
-        <td>In Oven</td>
         <td>Pickup</td>
       </tr>
      
@@ -170,27 +124,10 @@
         <td>1 Supreme Pizza<br>
         2-1 Liter Sprite</td>
         <td>(###)###-9267</td>
-        <td>IN Oven</td>
         <td>Pickup</td>
       </tr>
       
-      <tr>
-        <td>Anthony Gibson</td>
-        <td>N/A</td>
-        <td>Custom Pizza #1<br>
-          Pepperoni, Mushroom<br>
-          Stuffed Crust<br>
-          Large<br>
-          Custom Pizza #2<br>
-          Canadian Bacon<br>
-          Pepperoni<br>
-          Sp. Ins... extra Canadian Bacon
-    </td>
-        <td>(###)###-3572</td>
-        <td>Not Started</td>
-        <td>Delivery</td>
-      </tr>
-   
+
     </table>
    
     <script src="script.js" defer></script>
