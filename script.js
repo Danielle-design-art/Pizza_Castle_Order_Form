@@ -1,6 +1,11 @@
 console.log("Help Wanted ;)")
 
-let myForm = document.getElementById("myForm");
+
+function makeThisWork (event) {
+    event.preventDefault();
+
+
+    let myForm = document.getElementById("myForm");
 let table = document.getElementById("orderTablet");
 let fname  = document.getElementById("fname");
 let pnumber = document.getElementById("pnumber");
@@ -14,9 +19,6 @@ let pizza5 = document.getElementById("Buffalo Chicken");
 let pizza6 = document.getElementById("Breakfast Pizza");
 let specialInstructionsText = document.getElementById("specialInstructionsText");
 let submitOrderButton = document.getElementById("submitOrderButton");
-
-function makeThisWork (event) {
-    event.preventDefault();
 
     let orderTablet = document.getElementById("orderTablet");
     let row = document.createElement("tr");
@@ -51,7 +53,7 @@ FormData.reset();
 
 
 
-    myForm.addEventListener("submit", )
+    myForm.addEventListener("submit", makeThisWork )
   
 }
  

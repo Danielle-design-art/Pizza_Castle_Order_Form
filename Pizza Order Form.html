@@ -6,21 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Castle Order Form</title>
-
+    <img src="pizza-pizzza.png" alt="Royal Pizza Image"; width="400px"; style="position:absolute; top: 10px; right: 10px">
 <body>
     <h1>Pizza Castle Online Ordering</h1>
 
-
     <section>
-    <form action="/action_page.php">
+    <form action="/action_page.php" onsubmit="makeThisWork(event)">
   
   <div class="customerInfo">
   <label for="fname">Full Name:</label><br>
   <input type="text" id="fname" value=""><br>
   <label for="pnumber">Contact Number:</label><br>
   <input type="text" id="pnumber" value=""><br>
-  
- 
   <label for="Pickup or Delivery">Pickup or Delivery:</label><br>
   <select id="language" size="1" style="height: 32px;"> 
     <option value="pickup">pickup</option> 
@@ -29,21 +26,8 @@
 </div>
 
 
-
-</form>
-
-
-<img src="pizza-pizzza.png" alt="Royal Pizza Image"; width="400px"; style="position:absolute; top: 10px; right: 10px">
-
-  
-    
- 
-  </form>
- 
-
    <div class="specialty pizza">
-    <form action="/action_page.php">
-      <h2>Specialty Pizzas</h2>
+     <h2>Specialty Pizzas</h2>
      
       <input type="checkbox" id="pizza1" value="Cheese Pizza">
       <label for="pizza1"> Cheese Pizza</label> <br>
@@ -64,13 +48,10 @@
       <label for="pizza6">Breakfast Pizza</label> <br>
      
       <textarea id="specialInstructionsText">"Request Special Instructions"</textarea><br><br>
-      <button id="submitOrder" type="button" onclick="">Submit Order</button>
+      <button id="submitOrder" type="submit" onclick="">Submit Order</button>
    
       </form>
-      
-    </div>
-
-
+     </div>
 </section>
 </head>
 
