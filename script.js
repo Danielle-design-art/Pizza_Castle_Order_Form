@@ -1,61 +1,45 @@
 console.log("Help Wanted ;)")
 
+document.addEventListener('DOMContentLoaded',function ()  {
 
-function makeThisWork (event) {
-    event.preventDefault();
+const button = document.getElementById('submitOrder');
+const form =document.getElementById('myForm');
+const tableBody= document.getElementById('oderTabconst');
 
-
-    let myForm = document.getElementById("myForm");
-let table = document.getElementById("orderTablet");
-let fname  = document.getElementById("fname");
-let pnumber = document.getElementById("pnumber");
-let language = document.getElementById("language");
-
-let pizza1 = document.getElementById("Cheese Pizza") ;
-let pizza2 = document.getElementById("Supreme Pizza");
-let pizza3 = document.getElementById("Meat Lovers");
-let pizza4 = document.getElementById("Hawaiian pizza");
-let pizza5 = document.getElementById("Buffalo Chicken");
-let pizza6 = document.getElementById("Breakfast Pizza");
-let specialInstructionsText = document.getElementById("specialInstructionsText");
-let submitOrderButton = document.getElementById("submitOrderButton");
-
-    let orderTablet = document.getElementById("orderTablet");
-    let row = document.createElement("tr");
-    let fname = document.createElement("td");
-    let lname = document.createElement("td");
-    let pnumber = document.createElement("td");
-    let language = document.createElement("td");
-    
-
-    let pizza1 = document.createElement("td");
-    let pizza2 = document.createElement("td");
-    let pizza3 = document.createElement("td");
-    let pizza4 = document.createElement("td");
-    let pizza5 = document.createElement("td");
-    let pizza6 = document.createElement("td");
-    
-    let specialInstructionsText = document.createElement("td");
+form.addEventListener('submit', function (e) {
 
 
-let newRow = orderTablet.insertRow(-1);
-newRow.insertCell(0).innerHTML =custName;
-newRow.insertCell(1).innerHTML =specialInstructions;
-newRow.insertCell(2).innerHTML =order;
-newRow.insertCell(3).innerHTML =contactNumber;
-newRow.insertCell(4).innerHTML =orderPreferrence;
+const myForm = document.getElementById("myForm").value;
+const table = document.getElementById("orderTabconst").value;
+const fname1  = document.getElementById("fname").value;
+const pnumber1 = document.getElementById("pnumber").value;
+const language1 = document.getElementById("language");
+const specialInstructionsText = document.getElementById("specialInstructionsText").value;
+const submitOrderButton = document.getElementById("submitOrderButton").value;
+
+const pizza1 = document.createElement("Cheese Pizza").value;
+const pizza2 = document.createElement("Supreme Pizza").value;
+const pizza3 = document.createElement("Meat Lovers").value;
+const pizza4 = document.createElement("Hawaiian pizza").value;
+const pizza5 = document.createElement("Buffalo Chicken").value;
+const pizza6 = document.createElement("Breakfast Pizza").value;
+
+
+
+const newRow = document.createElement('tr');
+newRow.innerHTML = 
+<td>${custName}</td>;
+<td>specialInstructions</td>;
+<td>order</td>;
+<td>contactNumber</td>;
+<td>orderPreferrence</td>
+
+
+tableBody.append(newRow);
 
 FormData.reset();
 
 
-
-
-
-
-
-    myForm.addEventListener("submit", makeThisWork )
   
-}
- 
-
-
+});
+});

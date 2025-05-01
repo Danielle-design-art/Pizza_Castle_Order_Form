@@ -11,14 +11,14 @@
     <h1>Pizza Castle Online Ordering</h1>
 
     <section>
-    <form action="/action_page.php" onsubmit="makeThisWork(event)">
+    <form id= "myForm" onsubmit="inputOrderTabletInfo(event)">
   
-  <div class="customerInfo">
-  <label for="fname">Full Name:</label><br>
+<div class="customerInfo">
+  <label for="fname" required placeholder="full name">Full Name:</label><br>
   <input type="text" id="fname" value=""><br>
-  <label for="pnumber">Contact Number:</label><br>
+  <label for="pnumber" required placeholder="phone number">Contact Number:</label><br>
   <input type="text" id="pnumber" value=""><br>
-  <label for="Pickup or Delivery">Pickup or Delivery:</label><br>
+  <label for="Pickup or Delivery" >Pickup or Delivery:</label><br>
   <select id="language" size="1" style="height: 32px;"> 
     <option value="pickup">pickup</option> 
     <option value="delivery">delivery</option>
@@ -48,10 +48,11 @@
       <label for="pizza6">Breakfast Pizza</label> <br>
      
       <textarea id="specialInstructionsText">"Request Special Instructions"</textarea><br><br>
-      <button id="submitOrder" type="submit" onclick="">Submit Order</button>
+      <button id="submitOrder" type="submit" onclick="makeThisWork(event)">Submit Order</button>
    
-      </form>
-     </div>
+    </div>
+      
+  </form>
 </section>
 </head>
 
@@ -67,7 +68,8 @@
         <th id="orderPreferrence">Pickup|Delivery</th>
       </tr>
     
-      <tr>
+     
+     <tr>
         <td>Ernest Breaux</td>
         <td>N/A</td>
         <td>1 SM Cheese Pizza<br>
