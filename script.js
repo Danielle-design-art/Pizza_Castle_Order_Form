@@ -25,8 +25,7 @@ const pizza3 = document.createElement("Meat Lovers").value;
 const pizza4 = document.createElement("Hawaiian pizza").value;
 const pizza5 = document.createElement("Buffalo Chicken").value;
 const pizza6 = document.createElement("Breakfast Pizza").value;
-
-
+console.log(getElementById)
 
 function addRow(DOMContentLoaded) {
   const tableBody = document.getElementById('orderTablet');
